@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Выбор модели двигателя и характеристики</title>
+    </head>
+    <body>
+        <h1>Выберите модель двигателя и характеристики</h1>
+        <form action="result.php" method="post">
+            <label for="engine_model">Модель двигателя:</label>
+            <select name="engine_model" id="engine_model">
+                <option value="4052">Модель 4052</option>
+                <option value="4905">Модель 4905</option>
+                <option value="5234">Модель 5234</option>
+                <option value="511">Модель 511</option>
+            </select>
+            <p>Выберите характеристику:</p>
+            <input type="radio" name="characteristic" value="степень сжатия" id="">
+            <label for="weight">Степень сжатия</label>
+            <input type="radio" name="characteristic" value="вес" id="weight">
+            <label for="cylinder_volume">Вес</label>
+
+            <br>
+            <input type="radio" name="characteristic" value="all" id="all">
+            <label for="all">Все характеристики</label>
+            <br>
+
+            <input type="submit" value="Показать характеристики">
+        </form>
+    </body>
+    </html>
